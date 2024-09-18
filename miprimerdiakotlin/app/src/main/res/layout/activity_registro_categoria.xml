@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categoria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradientr"
+    android:padding="16dp"
+    tools:context=".registro_categoria">
+
+    <!-- Título -->
+
+    <!-- Campo Código de Categoría -->
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="359dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.235">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCodigoCategoria_layout"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:hint="Código de Categoría"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCodigoCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardmput"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNombreCategoria_layout"
+            android:layout_width="280dp"
+            android:layout_height="73dp"
+            android:hint="Nombre de Categoría"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNombreCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardmput"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtDescripcionCategoria_layout"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:hint="Descripción de Categoría"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDescripcionCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardmput"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnGuardarCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/btncolor"
+            android:text="Guardar Categoría"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Registro de Categorías"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo Nombre de Categoría -->
+
+    <!-- Campo Descripción de Categoría -->
+
+    <!-- Botón Guardar Categoría -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

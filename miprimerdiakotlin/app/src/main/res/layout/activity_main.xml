@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Buscar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_input_background"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+
+    <!-- Contenedor de campos de entrada -->
+
+    <!-- Botón de búsqueda -->
+
+    <!-- Lista de resultados -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="329dp"
+        android:layout_height="558dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="23dp">
+
+        <TextView
+            android:id="@+id/calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Buscar Producto, Categoría o Proveedor"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCodigo_layout"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Código"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/txtNombreProducto_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCodigo"
+                android:layout_width="306dp"
+                android:layout_height="48dp"
+                android:background="@drawable/cardmput"
+
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo Nombre del Producto -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNombreProducto_layout"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Nombre del Producto"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/txtPrecio_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCodigo_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNombreProducto"
+                android:layout_width="305dp"
+                android:layout_height="48dp"
+                android:background="@drawable/cardmput"
+
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo Precio -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPrecio_layout"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Precio"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/btnGuardarProducto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombreProducto_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPrecio"
+                android:layout_width="305dp"
+                android:layout_height="47dp"
+                android:background="@drawable/cardmput"
+
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón Guardar Producto -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="338dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <LinearLayout
+                android:id="@+id/linearLayfout"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Campo de nombre -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtnompro_layodut"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="id Categoria"
+                    app:endIconMode="clear_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombreProducto_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtIdCategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/cardmput"
+
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="nombre categoria"
+                    app:endIconMode="clear_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombreProducto_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtnomcategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/cardmput"
+
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Campo de precio -->
+
+
+                <!-- Campo de selección -->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuscarcate"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/btncolor"
+                android:text="Buscar"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="121dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <LinearLayout
+                android:id="@+id/linearLayffdout"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Campo de nombre -->
+
+
+                <!-- Campo de precio -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="id Proveedor"
+                    app:endIconMode="clear_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombreProducto_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtIdProveedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/cardmput"
+
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="nombre proveedor"
+                    app:endIconMode="clear_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombreProducto_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtnomProveedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/cardmput"
+
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuscarproveedor"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="16dp"
+
+                android:text="Buscar"
+                android:textSize="16sp"
+                android:background="@drawable/btncolor"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnGuardarProducto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/btncolor"
+                android:text="Guardar Producto"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPrecio_layout" />
+
+            <Button
+                android:id="@+id/btnGuardarProducto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/btncolor"
+                android:text="Guardar Producto"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPrecio_layout" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-120dp"
+
+            android:background="@drawable/btncolor"
+            android:text="Guardar Producto"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrecio_layout" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listaProduct"
+        android:layout_width="340dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cardmput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
